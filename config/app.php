@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'RaceMonitor Tartarugators'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://racemonitor.localhost'),
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -67,7 +67,9 @@ return [
     | UTC
     */
 
-    'timezone' => 'Asia/Ho_Chi_Minh',
+    'timezone' => 'America/Sao_Paulo',
+    'date_format' => 'd/m/Y',
+    'date_format_js' => 'dd/mm/yy',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +95,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +108,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -235,6 +237,8 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Flash' => Laracasts\Flash\Flash::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Toastr' => Brian2694\Toastr\Facades\Toastr::class,
+        'Helper' => App\Helpers\Helper::class
     ],
 
 ];

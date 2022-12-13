@@ -36,3 +36,8 @@ Route::post(
 
 
 Route::resource('fileUploads', App\Http\Controllers\FileUploadController::class);
+
+
+
+Route::resource('corridas', App\Http\Controllers\CorridaController::class);
+

@@ -12,7 +12,7 @@
         "doctrine/dbal": "~2.3",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.0.1",
+        "guzzlehttp/guzzle": "^7.5",
         "infyomlabs/adminlte-templates": "^3.0",
         "infyomlabs/generator-builder": "dev-master",
         "infyomlabs/laravel-generator": "^3.1.0",

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 class AppServiceProvider extends ServiceProvider
@@ -25,5 +26,12 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
+
+        // acesso ao API
+        Http::macro('RMapi' , function (){
+           return Http::acceptJson()
+               ->baseUrl(config('RMapi.url'));
+        });
+
     }
 }
